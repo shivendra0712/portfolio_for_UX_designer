@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio_for_UX_designer</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -20,23 +21,25 @@
 </head>
 
 <body>
+     <!-- Prompt 20  -->
+
     <!-- main  -->
-    <div class="main h-screen w-screen overflow-x-hidden">
+    <div class="main h-screen w-screen overflow-x-hidden lg:flex lg:flex-col lg:gap-[1em]">
         <!-- nav -->
         <div class="nav w-full py-3 px-8 flex justify-between items-center">
             <h2 class="text-2xl font-semibold">Hello</h2>
             <div class="nav_links hidden md:inline  md:flex md:gap-12 md:items-center md:font-medium">
-                <a class="text-lg" href="#">About</a>
+                <a class="text-lg" href="#about">About</a>
                 <a class="text-lg" href="#">Projects</a>
                 <a class="text-lg" href="#">Skills</a>
             </div>
             <i class="text-xl font-semibold ri-menu-3-fill md:hidden"></i>
         </div>
         <!--  hero section -->
-        <div class="w-full hero_section bg-[#101A38] py-20 ">
+        <div class="w-full hero_section bg-gradient-to-b from-[#101A38] to-[#101A38]/90 py-20 rounded-br-[2em] rounded-bl-[2em] ">
             <h1 class="text-3xl text-white text-center  md:text-5xl">Shivendra Patel</h1>
-            <h1 class="text-3xl text-white text-center md:text-5xl">UX Developer</h1>
-            <div class="text-white text-center mt-4 text-3xl md:text-4xl md:mt-8">
+            <h1 class="text-3xl text-white text-center md:text-2xl">UX Developer</h1>
+            <div class="text-white text-center mt-4 text-lg md:text-4xl md:mt-8">
                 <a class="px-1" href=""><i class="fa-brands fa-linkedin"></i></a>
                 <a class="px-1" href=""><i class="fa-brands fa-github"></i></a>
                 <a class="px-1" href=""><i class="fa-solid fa-envelope"></i></a>
@@ -46,84 +49,84 @@
         </div>
 
         <!-- section2   -->
-        <div class="section2 w-full  bg-[#182B48]   py-8">
-            <h1 class="text-2xl font-semibold text-white text-center py-4">About</h1>
+        <div class="section2 w-full  bg-[#101A38]  text-black border-2 border-l-white rounded-[2em] py-8" id="about">
+            <h1 class="text-2xl font-semibold text-white text-center py-4 underline uppercase">About</h1>
             <div class="box flex flex-col  w-full items-center  px-8 md:flex-row md:gap-12  md:justify-center">
-                <div class="section2_left w-1/2 md:w-1/3 lg:w-1/4">
-                    <img class="w-full rounded-full" src="images/shivendra.jpeg" alt="">
+                <div class="section2_left w-1/2 md:w-1/3 lg:w-[20%]">
+                    <img class="w-full rounded-br-[1em] rounded-bl-[1em] " id="ig1" src="images/img1.png" alt="">
                 </div>
-                <div class="section2_right w-full  px-10 py-4 text-white md:w-1/2">
+                <div class="section2_right w-full mt-8 px-10 py-4 text-white md:w-1/2 bg-rd-400 relative left-[5em] border-l-[5px] border-white">
                     <h2 class="text-xl font-semibold my-4">UX Developer</h2>
-                    <p class="text-lg font-base">I am a tech enthusiast deeply passionate about UX design and front-end
+                    <p class="text-md italic font-base">I am a tech enthusiast deeply passionate about UX design and front-end
                         development. I invest time
                         every day to enhance my expertise in creating seamless, user-friendly interfaces and ensuring
                         optimal responsiveness in websites. My focus is on crafting intuitive designs that prioritize
                         user experience and accessibility, blending technical skill with a keen understanding of user
                         needs.</p>
-                    <button class="my-4 px-4 py-2 bg-blue-400 rounded-full text-black text-xl font-semibold ">Download
+                    <button class="my-4 px-4 py-2 bg-zinc-700 border-white border-[2px] rounded-full text-black font-semibold mx-auto text-white text-sm">Download
                         Resume</button>
                 </div>
             </div>
         </div>
 
         <!--section3  -->
-        <div class="section3 w-full p-8 bg-[#030117]">
-            <h1 class="text-2xl font-semibold text-white text-center py-4">Projects</h1>
+        <div class="section3 w-full p-8 bg-[#030117] rounded-[2em] ">
+            <h1 class="text-2xl font-semibold text-white text-center py-4 underline uppercase">Projects</h1>
             <div
                 class="section3_box w-full flex flex-col md:flex-row items-center justify-between  md:flex-row md:gap-12  md:justify-center ">
-                <div class="box_child w-5/6 bg-[#0D0B20] p-4 my-8 rounded-xl">
+                <div class="box_child w-5/6 bg-white p-4 my-8 rounded-xl hover:bg-transparent hover:border-2 hover:border-white/50 transition-all 0.6s ease-out hover:text-white">
                     <img class="w-full rounded-xl" src="images/porject1.png" alt="">
-                    <h1 class="text-xl font-semibold my-4 text-white">Saas Project</h1>
-                    <p class="text-lg font-base text-white my-4">SaaS project delivers cloud-based software solutions to
+                    <h1 class="text-xl font-semibold my-4">Saas Project</h1>
+                    <p class="text-md font-base my-4">SaaS project delivers cloud-based software solutions to
                         users via a subscription model, enabling access anytime through web or mobile apps. It focuses
                         on scalability.</p>
                     <hr>
-                    <div class="my-4"><button class=" px-4 py-1 bg-[#F5A524] rounded-full text-black text-lg md:my-4"><i
+                    <div class="my-4"><button class=" px-4 py-1 bg-green-300 rounded-full text-black text-lg md:my-4"><i
                                 class="ri-html5-line"></i> Html5</button> <button
-                            class=" px-4 py-1 bg-[#F5A524] rounded-full text-black text-lg "><i
+                            class=" px-4 py-1 bg-green-300 rounded-full text-black text-lg "><i
                                 class="ri-tailwind-css-line"></i> Tailwind</button></div>
                     <hr>
                     <div class="flex justify-between items-center my-4">
-                        <button class=" px-4 py-1 bg-[#F5A524] rounded text-black text-lg "><a href="#"><i
+                        <button class=" px-4 py-1 bg-green-300 rounded text-black text-lg "><a href="#"><i
                                     class="fa-brands fa-github"></i></a></button>
-                        <button class=" px-4 py-1 bg-[#F5A524] rounded text-black text-lg "><a
+                        <button class=" px-4 py-1 bg-green-300 rounded text-black text-lg "><a
                                 href="#">Demo</a></button>
                     </div>
                 </div>
-                <div class="box_child w-5/6 bg-[#0D0B20] p-4 my-8 rounded-xl">
+                <div class="box_child w-5/6 bg-white p-4 my-8 rounded-xl hover:bg-transparent hover:border-2 hover:border-white/50 transition-all 0.6s ease-out hover:text-white">
                     <img class="w-full rounded-xl" src="images/project2.png" alt="">
-                    <h1 class="text-xl font-semibold my-4 text-white">NGO Project</h1>
-                    <p class="text-lg font-base text-white my-4">NGO is a nonprofit entity that operates independently
-                        of government, aiming to address social, cultural, or environmental issues. It works through
+                    <h1 class="text-xl font-semibold my-4 ">NGO Project</h1>
+                    <p class="text-md font-base my-4">NGO is a nonprofit entity that operates independently
+                        of government or environmental issues. It works through
                         advocacy, programs, and services to create positive change in communities.</p>
                     <hr>
-                    <div class="my-4"><button class=" px-4 py-1 bg-[#F5A524] rounded-full text-black text-lg md:my-4"><i
+                    <div class="my-4"><button class=" px-4 py-1 bg-green-300 rounded-full text-black text-lg md:my-4"><i
                                 class="ri-html5-line"></i> Html5</button> <button
-                            class=" px-4 py-1 bg-[#F5A524] rounded-full text-black text-lg "><i
+                            class=" px-4 py-1 bg-green-300 rounded-full text-black text-lg "><i
                                 class="ri-css3-line"></i> CSS3</button></div>
                     <hr>
                     <div class="flex justify-between items-center my-4">
-                        <button class=" px-4 py-1 bg-[#F5A524] rounded text-black text-lg "><a href="#"><i
+                        <button class=" px-4 py-1 bg-green-300 rounded text-black text-lg "><a href="#"><i
                                     class="fa-brands fa-github"></i></a></button>
-                        <button class=" px-4 py-1 bg-[#F5A524] rounded text-black text-lg "><a
+                        <button class=" px-4 py-1 bg-green-300 rounded text-black text-lg "><a
                                 href="#">Demo</a></button>
                     </div>
                 </div>
-                <div class="box_child w-5/6 bg-[#0D0B20] p-4 my-8 rounded-xl">
+                <div class="box_child w-5/6 bg-white p-4 my-8 rounded-xl hover:bg-transparent hover:border-2 hover:border-white/50 transition-all 0.6s ease-out hover:text-white">
                     <img class="w-full rounded-xl" src="images/project3.png" alt="">
-                    <h1 class="text-xl font-semibold my-4 text-white">Mock brand website</h1>
-                    <p class="text-lg font-base text-white my-4">Mock brand website is a prototype or conceptual version
+                    <h1 class="text-xl font-semibold my-4 ">Mock brand website</h1>
+                    <p class="text-md font-base my-4">Mock brand website is a prototype or conceptual version
                         of a brand's online presence designed for demonstration, testing, or development purposes.</p>
                     <hr>
-                    <div class="my-4"><button class=" px-4 py-1 bg-[#F5A524] rounded-full text-black text-lg md:my-4"><i
+                    <div class="my-4"><button class=" px-4 py-1 bg-green-300 rounded-full text-black text-lg md:my-4"><i
                                 class="ri-html5-line"></i> Html5</button> <button
-                            class=" px-4 py-1 bg-[#F5A524] rounded-full text-black text-lg "><i
+                            class=" px-4 py-1 bg-green-300 rounded-full text-black text-lg "><i
                                 class="ri-css3-line"></i> CSS3</button></div>
                     <hr>
                     <div class="flex justify-between items-center my-4">
-                        <button class=" px-4 py-1 bg-[#F5A524] rounded text-black text-lg "><a href="#"><i
+                        <button class=" px-4 py-1 bg-green-300 rounded text-black text-lg "><a href="#"><i
                                     class="fa-brands fa-github"></i></a></button>
-                        <button class=" px-4 py-1 bg-[#F5A524] rounded text-black text-lg "><a
+                        <button class=" px-4 py-1 bg-green-300 rounded text-black text-lg "><a
                                 href="#">Demo</a></button>
                     </div>
                 </div>
@@ -132,8 +135,8 @@
         </div>
 
         <!-- section4 -->
-        <div class="section2 w-full  bg-[#192E47]   py-8">
-            <h1 class="text-2xl font-semibold text-white text-center py-4">Skills</h1>
+        <div class="section2 w-full  bg-[#192E47]   py-8 rounded-[2em]">
+            <h1 class="text-2xl font-semibold text-white text-center py-4 underline uppercase">Skills</h1>
             <div class="box flex flex-col  w-full items-center  px-8 md:flex-row md:gap-20  md:justify-center">
                 <div class="section2_left w-full md:w-1/2 lg:w-1/3 text-white">
                     <h1 class="text-xl font-semibold my-4">My creative skills & Area of Interests.</h1>
@@ -145,23 +148,23 @@
                     <button class="my-4 px-4 py-2 bg-blue-400 rounded-full text-black text-lg font-semibold ">My Github</button>
                 </div>
                 <div class="section2_right w-full  px-4 py-4 text-white md:w-1/2">
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Prototyping, wireframing, user flows, mockups</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Visual design and design software</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>User research and usability testing</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Information architecture </p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i> Application development</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Front-end development</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Back-end development</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Database management</p>
-                    <p class="text-xl font-base" my-4><i class="ri-subtract-line"></i>Collaboration</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Prototyping, wireframing, user flows, mockups</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Visual design and design software</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>User research and usability testing</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Information architecture </p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i> Application development</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Front-end development</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Back-end development</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Database management</p>
+                    <p class="text-lg font-base" my-4><i class="ri-subtract-line"></i>Collaboration</p>
                 </div>
             </div>
         </div>
 
         <!-- section5 -->
-         <div class="footer flex justify-between items-center p-8 bg-[#030117]">
+         <div class="footer flex justify-between items-center px-8 py-4 bg-[#030117] rounded-tr-[2em] rounded-tl-[2em]">
             <h1 class="text-xl font-semibold text-white">2025 @Shivendra</h1>
-            <div class="text-white text-center  text-3xl md:text-4xl ">
+            <div class="text-white text-center  text-xl md:text-2xl ">
                 <a class="px-2 " href=""><i class="fa-brands fa-linkedin"></i></a>
                 <a class="px-2 " href=""><i class="fa-brands fa-github"></i></a>
                 <a class="px-2 " href=""><i class="fa-solid fa-envelope"></i></a>
