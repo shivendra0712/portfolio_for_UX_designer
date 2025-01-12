@@ -1,0 +1,20 @@
+#ig1{
+    mix-blend-mode:;
+    animation-name: opic ;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    position: relative;
+    top: -4em;
+}
+
+@keyframes opic {
+    from{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
